@@ -4,30 +4,40 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Khelora</title>
+<meta name="description" content="Khelora makes simple, fun mobile games.">
+<meta property="og:title" content="Khelora">
+<meta property="og:description" content="Simple, fun mobile games.">
+<meta property="og:image" content="https://khelora.github.io/header.jpg">
+<link rel="icon" type="image/png" href="favicon.png">
 <style>
-  :root { --bg: #070d1f; --panel: #0d1733; --line: #22386b; --text: #dbe6ff; --muted: #9fb2d9; --accent: #43d8ff; }
+  :root { --bg: #050a1c; --panel: #0d1733; --line: #22386b; --text: #dbe6ff; --muted: #9fb2d9; --accent: #43d8ff; --violet: #b06bff; }
   * { box-sizing: border-box; }
   body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
-  main { max-width: 780px; margin: 0 auto; padding: 56px 16px; }
-  h1 { font-size: 40px; margin: 0; color: #fff; letter-spacing: 1px; }
-  .muted { color: var(--muted); }
-  .box { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; margin: 28px 0; }
-  h2 { font-size: 19px; margin: 0 0 8px; color: var(--accent); }
+  .hero { display: block; width: 100%; max-height: 520px; object-fit: cover; }
+  main { max-width: 780px; margin: 0 auto; padding: 24px 16px 56px; text-align: center; }
+  .tag { font-size: 20px; color: var(--muted); margin: 8px 0 32px; }
+  .box { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 20px; margin: 0 auto 32px; max-width: 420px; }
+  h2 { font-size: 15px; letter-spacing: 2px; text-transform: uppercase; margin: 0 0 10px;
+       background: linear-gradient(90deg, var(--accent), var(--violet)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .game { font-size: 18px; color: #fff; margin: 0; }
   a { color: var(--accent); }
+  footer { color: var(--muted); font-size: 14px; }
 </style>
 </head>
 <body>
+<img class="hero" src="header.jpg" alt="Khelora">
 <main>
-  <h1>Khelora</h1>
-  <p class="muted">Simple, fun mobile games.</p>
+  <p class="tag">Simple, fun mobile games.</p>
 
   <div class="box">
     <h2>Our games</h2>
-    <p>Split Ball: Space</p>
+    <p class="game">Split Ball: Space</p>
   </div>
 
-  <p><a href="privacy-policy.html">Privacy Policy</a> &middot;
-  <a href="mailto:abdur.dev89@gmail.com">abdur.dev89@gmail.com</a></p>
+  <footer>
+    <a href="privacy-policy.html">Privacy Policy</a> &middot;
+    <a href="mailto:abdur.dev89@gmail.com">abdur.dev89@gmail.com</a>
+  </footer>
 </main>
 </body>
 </html>
