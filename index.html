@@ -9,35 +9,51 @@
 <meta property="og:description" content="Simple, fun mobile games.">
 <meta property="og:image" content="https://khelora.github.io/header.jpg">
 <link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon-256.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
 <style>
-  :root { --bg: #050a1c; --panel: #0d1733; --line: #22386b; --text: #dbe6ff; --muted: #9fb2d9; --accent: #43d8ff; --violet: #b06bff; }
+  :root { --bg: #ffffff; --ink: #222222; --muted: #6b6b6b; --line: #ececec; --soft: #f6f6f6; }
   * { box-sizing: border-box; }
-  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
-  .hero { display: block; width: 100%; max-height: 520px; object-fit: cover; }
-  main { max-width: 780px; margin: 0 auto; padding: 24px 16px 56px; text-align: center; }
-  .tag { font-size: 20px; color: var(--muted); margin: 8px 0 32px; }
-  .box { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 20px; margin: 0 auto 32px; max-width: 420px; }
-  h2 { font-size: 15px; letter-spacing: 2px; text-transform: uppercase; margin: 0 0 10px;
-       background: linear-gradient(90deg, var(--accent), var(--violet)); -webkit-background-clip: text; background-clip: text; color: transparent; }
-  .game { font-size: 18px; color: #fff; margin: 0; }
-  a { color: var(--accent); }
-  footer { color: var(--muted); font-size: 14px; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.6 "Nunito", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 20px; }
+  header { padding: 96px 0 56px; text-align: center; }
+  header img { width: min(340px, 78vw); height: auto; }
+  .tag { color: var(--muted); font-size: 20px; margin: 22px 0 0; }
+  h2 { font-size: 13px; font-weight: 800; letter-spacing: 2.5px; text-transform: uppercase; color: var(--muted); margin: 0 0 16px; }
+  .game { display: flex; align-items: center; gap: 18px; padding: 18px; border: 1px solid var(--line); border-radius: 20px; background: var(--soft); }
+  .game img { width: 84px; height: 84px; border-radius: 20px; flex: none; }
+  .game h3 { margin: 0; font-size: 20px; font-weight: 800; }
+  .game p { margin: 2px 0 0; color: var(--muted); font-size: 15px; }
+  footer { margin: 72px 0 40px; padding-top: 24px; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: center; font-size: 15px; color: var(--muted); }
+  a { color: var(--ink); text-decoration-color: #bbb; text-underline-offset: 3px; }
+  a:hover { text-decoration-color: var(--ink); }
 </style>
 </head>
 <body>
-<img class="hero" src="header.jpg" alt="Khelora">
-<main>
-  <p class="tag">Simple, fun mobile games.</p>
+<div class="wrap">
+  <header>
+    <img src="logo.png" alt="khelora" width="520" height="125">
+    <p class="tag">Simple, fun mobile games.</p>
+  </header>
 
-  <div class="box">
+  <section>
     <h2>Our games</h2>
-    <p class="game">Split Ball: Space</p>
-  </div>
+    <div class="game">
+      <img src="split-ball.png" alt="">
+      <div>
+        <h3>Split Ball: Space</h3>
+        <p>Shoot the balls, split them, clear the sky. Coming soon to Google Play.</p>
+      </div>
+    </div>
+  </section>
 
   <footer>
-    <a href="privacy-policy.html">Privacy Policy</a> &middot;
+    <a href="privacy-policy.html">Privacy Policy</a>
     <a href="mailto:abdur.dev89@gmail.com">abdur.dev89@gmail.com</a>
+    <span>&copy; 2026 Khelora</span>
   </footer>
-</main>
+</div>
 </body>
 </html>
